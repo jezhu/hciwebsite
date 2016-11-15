@@ -15,10 +15,9 @@ html, body {
   color: white;
 }
 
-/* Main page logo */
-#main-content img {
-  display: block;
-  margin: 0 auto 20px;
+/* Main page text */
+#main-content .intro-text-ctn {
+  padding-bottom: 100px;
 }
 
 /* Main page text */
