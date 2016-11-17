@@ -1,0 +1,54 @@
+/* Main page background */
+html, body {
+  height: 100%;
+  background-image: url("../img/dorm.jpeg");
+  background-size: cover;
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Fjalla One", sans-serif;
+}
+
+#main-content .container {
+  padding-top: 150px;
+  text-align: center;
+  color: white;
+}
+
+/* Main page text */
+#main-content .intro-text-ctn {
+  padding-bottom: 100px;
+}
+
+/* Main page text */
+#main-content .intro-text-ctn .intro-text {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* Adjusts padding of logo + font size on bigger screen */
+@media (min-width: 768px) {
+  #main-content  .container {
+    padding-top: 15%;
+  }
+
+  #main-content .intro-text-ctn .intro-text {
+    font-size: 3.5em;
+  }
+}
+
+section {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+#private {
+  padding-bottom: 75px;
+}
+
+.link-title {
+  text-align: center;
+}

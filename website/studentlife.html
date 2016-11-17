@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>University of Edinburgh - Student Life</title>
+
+    <!-- Browser icon -->
+    <link rel="icon" href="img/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/studentlife.css" rel="stylesheet">
+
+    <!-- Nav CSS -->
+    <link href="css/navbar.css" rel="stylesheet">
+
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
+
+    <!-- Animation CSS -->
+    <link href="lib/animate.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+
+</head>
+
+<body id="uoe-ctn">
+<script>
+function toggleElement(id)
+{
+    if(document.getElementById(id).style.display == 'none')
+    {
+        document.getElementById(id).style.display = '';
+    }
+    else
+    {
+        document.getElementById(id).style.display = 'none';
+    }
+}
+</script>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand & toggle grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+                    <span class="sr-only">Toggle navigation</span> Menu
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="uoe.html">School of Informatics</a>
+            </div>
+
+            <!-- Nav links -->
+            <div class="collapse navbar-collapse" id="nav-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#uoe-ctn"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#studentassociation">EUSA</a>
+                    </li>
+                    <!--<li class="page-scroll">
+                        <a href="#societies">Societies</a>
+                    </li>-->
+                    <li class="page-scroll">
+                        <a href="#events">Surviving Informatics</a>
+                    </li>                                        
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div id="main-content">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-text-ctn">
+                        <span class="intro-text animated fadeIn">Student Life</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section id="studentassociation">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>EUSA</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 link-item">
+                    <div class="link-title">
+                        <h3>Who are we?</h3>
+                    </div>
+
+                    <a href="#gsModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/potterrow.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 link-item">
+                    <div class="link-title">
+                        <h3>Societies</h3>
+                    </div>
+
+                    <a href="#gsModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/societies.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 link-item">
+                    <div class="link-title">
+                        <h3>Events</h3>
+                    </div>
+
+                    <a href="#gsModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/events.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Surviving Informatics</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 link-item">
+                    <div class="link-title">
+                        <h3>Personal Tutor & ITO</h3>
+                    </div>
+
+                    <a href="#conModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/itopt.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 link-item">
+                    <div class="link-title">
+                        <h3>Popular Places</h3>
+                    </div>
+
+                    <a href="#conModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/aerial.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 link-item">
+                    <div class="link-title">
+                        <h3>Become a Student Rep!</h3>
+                    </div>
+
+                    <a href="#conModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/code.jpeg" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="portfolio-modal modal fade" id="gsModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Who are we?</h2>
+                            <hr class="star-primary">
+                            <img src="img/potterrow.jpg" class="img-responsive img-centered" alt="">
+                            <h1 align="center">By the students, for the students </h1>
+                            <p>The Edinburgh University Student Association (EUSA) is your student union at the University. The EUSA is
+                            a student led, campaigned, and funded organisation created for your benefit. The organisation has a multitude
+                            of resources available for you to be invovled, innovative, and empowered to do whatever you can to make your
+                            university experience that much better. </p>
+
+                            <h1 align="center">Get involved!</h1>
+                            <p>The EUSA is your gateway to finding out your personal community and your chance to build your impact
+                            on the University as a whole! You will discover a huge network of organisations called societies here at Edinburgh that will grow your interests and profession into something more. New students are welcome because without you, the EUSA is nothing!</p>
+
+                            <p>To learn more about the EUSA, click <a href="https://www.eusa.ed.ac.uk/">here! </a>
+                            <p> </p>
+                            <p>
+<a href="javascript:toggleElement('a1')">Is there more info about the EUSA's mission statement I can find?</a>
+</p>
+<div id="a1" style="display:none">
+You're in luck, here's <a href="https://www.eusa.ed.ac.uk/about/strategic/">exactly </a>what you're looking for!
+</div>
+<p>
+<a href="javascript:toggleElement('a2')">Who exactly runs the EUSA?</a>
+</p>
+<div id="a2" style="display:none">
+Here's who your student reps are what they can do for you at this  <a href="https://www.eusa.ed.ac.uk/representation/studentrepresentation/">link </a>
+</div>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="gsModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Societies</h2>
+                            <hr class="star-primary">
+                            <img src="img/societies.jpg" class="img-responsive img-centered" alt="">
+                            <h1 align="center">Your passions realised</h1>
+                            <p>
+                                Societies are student ran special interest organisations that bring your hobbies and passions to the greater university community. These are a great way to find like minded people and further cultivate your passions and interests.
+                            </p>
+
+                            <img src="img/group.jpg" class="img-responsive img-centered" alt="">
+                            <h2 align="center">For everyone and anyone</h2>
+                            <p>
+                                There is always a soceity for anyone. Whether you are an afficiando of photography or an amateur programmer wanting to get into game design, societies are inclusive and low barrier groups that let you collaborate and explore your interests or find your next passion. The university makes sure that these societies are low cost so that you can focus more on the activities rather than the funding!
+                            </p>
+
+                            <img src="img/sport.jpg" class="img-responsive img-centered" alt="">
+                            <h2 align="center">Explore and be open</h2>
+                            <p>
+                                Searching and joining a society is a streamlined process! All societies have a wonderful crew of officials that are easy to contact and everyone manages their events through social media. Use <a href="https://www.eusa.ed.ac.uk/activities/societies/findasociety/"> this </a> to find your societies to join! 
+                            </p>
+<p>
+<a href="javascript:toggleElement('a3')">Is there a maximum limit on the societies you can join?</a>
+</p>
+<div id="a3" style="display:none">
+There is no limit to how many you can join, however don't spread yourself to thin! You want
+to enjoy the most you can in your respective societies.
+</div>
+<p>
+<a href="javascript:toggleElement('a4')">Is there a minimum time commitment you need to put in for a society?</a>
+</p>
+<div id="a4" style="display:none">
+There is no minimum time commitment, enjoy a society for as long as you want and if it's not working for you,
+explore your options! Please note that if a society does charge for admission, do not count on receiving the money
+back after leaving.
+</div>
+<p>
+<a href="javascript:toggleElement('a5')">Is there a society fair that showcases all the societies available?</a>
+</p>
+<div id="a5" style="display:none">
+Freshers week has the exact event you are looking for. For more information, see the events tab on this website.
+</div>
+
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="gsModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Events</h2>
+                            <hr class="star-primary">
+                            <img src="img/events.jpg" class="img-responsive img-centered" alt="">
+                            <h1 align="center">Work hard, play hard</h1>
+                            <p>
+                                We understand that every student needs an appropriate academic and social life balance to be mentally healthy and to get the most out of the university experience. The EUSA constantly and consistently provides students activites to do throughout the year as a community. Whether it be watching a sports game at the Library Bar or enjoying a comedy show, the University always has something available to do! Check out what's going on today <a href="https://www.eusa.ed.ac.uk/whatson/home/">here!</a>
+                            </p>
+
+
+                            <img src="img/social.jpg" class="img-responsive img-centered" alt="">
+                            <h1 align="center">Fresher's Week</h1>
+                            <p>
+                                The biggest week for new students yet! This is the university's way of introducing you to the vibrant community at the University of Edinburgh as well as the academic life for every one to enjoy! There is no better way see Edinburgh like this, so check out the calendar <a href="http://www.ed.ac.uk/students/new-students/events/sept-welcome"> here.</a>
+
+                                From September 10th to the 17th, enjoy a multitude of activities such as a castle tour of Edinburgh or a visit to the zoo or go on a pub crawl! All these activities require money at the door, but if you buy a <a href="https://www.eusa.ed.ac.uk/shop/product/10032530/">Fresher's wristband </a> you'll enjoy discounted or even free events. This the best way to enjoy everything you can this fresher's week!
+                            </p>
+<p>
+<a href="javascript:toggleElement('a6')">Can postgraduates attend?</a>
+</p>
+<div id="a6" style="display:none">
+Yes! You are also allowed to purchase a freshers wristband as well.</div>
+<p>
+<a href="javascript:toggleElement('a7')">Is alcohol necessary to enjoy fresher's week?</a>
+</p>
+<div id="a7" style="display:none">
+Of course not, there are events for both drinkers and non drinkers alike.
+</div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="portfolio-modal modal fade" id="conModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Personal Tutor & ITO</h2>
+                            <hr class="star-primary">
+                            <img src="img/itopt.jpg" class="img-responsive img-centered" alt="">
+                            <h1 align="center">Your Personal Tutor is here to Help</h1>
+                            <p>
+                                Think of your personal tutor (PT) as your personal counselor at the University of Edinburgh. Every student is assigned one, and these PTs handles all academic logistics such as matriculation, signing up for classes, and any academic support you may need. They will also offer personal if you have any difficulties dealing with school as well as career support. 
+                            </p>
+
+                            <h2 align="center"> Personal Tutors are your first line of Contact</h2>
+                            <ul>
+                                <li>A source for academic, career, and personal support</li>
+                                <li> Help you with any trouble you may have, either by directly helping or pointing you to the right resource to get help </li>
+                                <li> Your first contact to consult if you have any academic logistics dealing with matriculation</li>
+                                <li> Can only help you when you speak up and speak up soon </li>
+                            </ul>
+
+                            <h2 align="center"> The Informatics Teaching Organisation </h2>
+                            <p>
+                                The Informatics Teaching Organisation (ITO) is the institution that handles any issues you may have that your PT cannot solve at the moment. Any general informatics matriculation and logistics information can be resolved here via an appointment or walk in visit to the building.
+                            </p>
+
+                            <h2 align="center"> Contact the ITO if all else fails! </h2>
+                            <table class="table">
+    <tbody>
+        <tr>
+            <td>Internal enquiries</td>
+            <td><a class="external-link" href="https://weblogin.inf.ed.ac.uk/cosign-bin/cosign.cgi?factors=INF.ED.AC.UK&amp;cosign-www.inf.ed.ac.uk&amp;https://www.inf.ed.ac.uk/cgi-bin/iss/contact.cgi">Contact form</a></td>
+            <td>If you have an Informatics DICE account</td>
+        </tr>
+        <tr>
+            <td>External enquiries</td>
+            <td><a class="external-link" href="http://www.inf.ed.ac.uk/cgi-bin/iss/external-contact.cgi">Contact form</a></td>
+            <td>If you don't have a DICE account</td>
+        </tr>
+        <tr>
+            <td>Telephone</td>
+            <td>+44&nbsp;131&nbsp;651 7607</td>
+            <td>517607 within the University</td>
+        </tr>
+        <tr>
+            <td>Fax</td>
+            <td>+44&nbsp;131&nbsp;650&nbsp;2957</td>
+            <td>502957 within the University</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td colspan="2">ITO, Room FH-1.B15, Forrest Hill, 5 Forrest Hill, Edinburgh, EH1 2QL</td>
+        </tr>
+        <tr>
+            <td>Opening hours</td>
+            <td colspan="2">Monday–Friday 9.30am to 4.30pm, closing 12.30–1.30pm for lunch.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h1 align="center">FAQ</h1>
+<p>
+<a href="javascript:toggleElement('a8')">How do new students register for classes?</a>
+</p>
+<div id="a8" style="display:none">
+The week prior to fresher's week, your Personal Tutor will email you a time to schedule a meet up to discuss your classes.</div>
+<p>
+<a href="javascript:toggleElement('a9')">My PT still hasn't emailed me! What can I do?</a>
+</p>
+<div id="a9" style="display:none">
+If your PT is not helping you, reach out to the ITO as soon as possible. They will be able to address any matriculation procedures</div>
+<p>
+<a href="javascript:toggleElement('a10')">Is there more information about PTs I should be aware of?</a>
+</p>
+<div id="a10" style="display:none">
+<a href="http://web.inf.ed.ac.uk/infweb/student-services/ito/admin/personal-tutoring-statement">Here </a>is all you need to know about PTs</div>
+
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="conModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Popular Places</h2>
+                            <hr class="star-primary">
+                           <!--  <img src="img/aerial.jpg" class="img-responsive img-centered" alt=""> -->
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div id="mapid"></div>
+                                </div>
+                            </div>
+
+                            <h1 align="center">Locations all students should know</h1>
+                            <ul>
+                                <li>Informatics Forum - <span style="color:maroon">10 Crichton Street</span><p>This building is the heart of where your PTs will be, plus where most of your professors offices will be.</p></li> 
+                                <li>Appleton Tower - <span style="color:maroon">11 Crichton St</span> <p>This popular lecture hall right across the street from the Informatics Forum .</p></li>
+                                <li>David Hume Tower - <span style="color:maroon">George Square</span> <p>Another popular lecture hall for informatics students is directly south of Appleton. Take George Square off Crichton on Appleton/Forum and you won't miss it!</p></li>
+                                <li>Forest Hill, ITO - <span style="color:maroon">5 Forrest Hill</span><p>This is where the ITO is located, along with all the student DICE machine computers where you'd ideally want to make sure your homework works fully on!</p></li> 
+
+
+<h2 align="center"> FAQ </h2>
+<p>
+<a href="javascript:toggleElement('a11')">Are these all the buildings informatics students will need to know?</a>
+</p>
+<div id="a11" style="display:none">
+Certainly not, there are other buildings for tutorials or lectures that are not listed here that not as common
+but are used for informatics student. <a href="http://www.ed.ac.uk/maps/maps?building=david-hume-tower#main-content">Here</a> is a
+comprehensive campus map for other buildings.</div>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="conModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Become a Student Rep!</h2>
+                            <hr class="star-primary">
+                            <img src="img/code.jpeg" class="img-responsive img-centered" alt="">
+                            <h1 align="center">Make an impact today</h1>
+                            <p>At each student level (years 1 to 5 and masters), the Informatics department is looking for
+                               four volunteers to become the class representative. By being a class representative, you act as
+                               a liason between students and the professor and the ITO itself. You can be the voice that can
+                               make informatics education at Edinburgh top notch!
+                            </p>
+
+                            <h2 align="center">As a Student Rep, your responsibilites are...</h2>
+                                <ul>
+                                    <li>Attend appropriate training sessions offered by EUSA.</li>
+                                    <li>Proactively gather student feedback, complaints, comments and suggestions on all aspects of courses and/or year they are reps for: which includes course content, course delivery, course administration, tutorials, practicals and course work.</li>
+                                    <li>Respond to feedback requests from School on specific issues such as the Personal Tutor scheme and Personal Tutor group meetings.</li>
+                                    <li>Alert relevant staff (course teacher, course organiser or ITO) to any issues that may have current impact.</li>
+                                    <li>Attend a weekly one hour meeting during semester; provide feedback and engage in pertinent discussions. On any given week this might be with <abbr title="Director of Teaching">DoT</abbr>+ITO, year SSLC, or EUSA training.</li>
+                                    <li>Eligible to be selected as a member of Board of Studies or Teaching Committee.</li>
+                                    <li>For School Reps attend Academic Council.</li>
+                                </ul>
+
+                            <h2 align="center">The benefits are great!</h2>
+                            <ul>
+                                <li>An identifiable person within their peer group.</li>
+                                <li>Useful to personal development.</li>
+                                <li>Free EUSA monthly lunches for Reps.</li>
+                                <li>Contacts with teachers and ITO staff.</li>
+                                <li>A task to be mentioned on their <abbr title="curriculum vitae">CV</abbr>.</li>
+                                <li>A task that will appear on their Hear transcript.</li>
+                            </ul>
+
+                            <h2 align="center">Interested in applying? Contact your year rep here!</h2>
+                            <table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Undergraduate Year 1</th>
+            <th scope="col">&nbsp;</th>
+            <th scope="col">Undergraduate Year 2</th>
+            <th scope="col">&nbsp;</th>
+            <th scope="col">Undergraduate Year 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a class="external-link" href="mailto:ug1-reps@inf.ed.ac.uk">ug1-reps@inf.ed.ac.uk</a></td>
+            <td>&nbsp;</td>
+            <td><a class="external-link" href="mailto:ug2-reps@inf.ed.ac.uk">ug2-reps@inf.ed.ac.uk</a></td>
+            <td>&nbsp;</td>
+            <td><a class="external-link" href="mailto:ug3-reps@inf.ed.ac.uk">ug3-reps@inf.ed.ac.uk</a></td>
+        </tr>
+</tbody>
+</table>
+<table class="table">
+<thead>
+        <tr>
+            <th scope="col">Undergraduate Year 4</th>
+            <th scope="col">&nbsp;</th>
+            <th scope="col">Undergraduate Year 5</th>
+            <th scope="col">&nbsp;</th>
+            <th scope="col">Masters</th>
+        </tr>
+</thead>
+<tbody>
+        <tr>
+            <td><a class="external-link" href="mailto:ug4-reps@inf.ed.ac.uk">ug4-reps@inf.ed.ac.uk</a></td>
+            <td>&nbsp;</td>
+            <td><a class="external-link" href="mailto:ug5-reps@inf.ed.ac.uk">ug5-reps@inf.ed.ac.uk</a></td>
+            <td>&nbsp;</td>
+            <td><a class="external-link" href="mailto:msc-reps@inf.ed.ac.uk">msc-reps@inf.ed.ac.uk</a></td>
+        </tr>
+ </tbody>
+
+</table>
+<p>
+<a href="javascript:toggleElement('a12')">Do we choose which class we can be a representative for?</a>
+</p>
+<div id="a12" style="display:none">
+Certainly! Check with your professor of choice to learn about class rep opportunities.
+</div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- jQuery -->
+    <script src="lib/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Leaflet JavaScript -->
+    <script src="lib/leaflet/leaflet.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/uoe.js"></script>
+
+</body>
+
+</html>
