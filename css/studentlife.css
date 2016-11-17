@@ -13,6 +13,7 @@ html, body {
   padding-top: 150px;
   text-align: center;
   color: black;
+  padding-bottom: 75px;
 }
 
 /* Main page text */
@@ -45,6 +46,15 @@ section {
   background-color: white;
 }
 
+#events {
+  padding-bottom: 75px;
+}
+
 .link-title {
   text-align: center;
+}
+
+#mapid { 
+  height: 400px; 
+  width: relative;
 }

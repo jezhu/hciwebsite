@@ -45,6 +45,10 @@ section {
   background-color: white;
 }
 
+#private {
+  padding-bottom: 75px;
+}
+
 .link-title {
   text-align: center;
 }
