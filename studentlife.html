@@ -29,7 +29,19 @@
 </head>
 
 <body id="uoe-ctn">
-
+<script>
+function toggleElement(id)
+{
+    if(document.getElementById(id).style.display == 'none')
+    {
+        document.getElementById(id).style.display = '';
+    }
+    else
+    {
+        document.getElementById(id).style.display = 'none';
+    }
+}
+</script>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
             <!-- Brand & toggle grouped for better mobile display -->
@@ -54,7 +66,7 @@
                         <a href="#societies">Societies</a>
                     </li>-->
                     <li class="page-scroll">
-                        <a href="#events">Events</a>
+                        <a href="#events">Informatics Survival</a>
                     </li>                                        
                 </ul>
             </div>
@@ -191,14 +203,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>EVENTS</h2>
+                    <h2>Surviving Informatics</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 link-item">
                     <div class="link-title">
-                        <h3>Process</h3>
+                        <h3>Personal Tutor & the ITO</h3>
                     </div>
 
                     <a href="#conModal1" class="portfolio-link" data-toggle="modal">
@@ -207,12 +219,12 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/paperwork.jpg" class="img-responsive" alt="">
+                        <img src="img/itopt.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 link-item">
                     <div class="link-title">
-                        <h3>Locations</h3>
+                        <h3>Popular Informatics Areas</h3>
                     </div>
 
                     <a href="#conModal2" class="portfolio-link" data-toggle="modal">
@@ -221,12 +233,12 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/pen.jpg" class="img-responsive" alt="">
+                        <img src="img/aerial.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 link-item">
                     <div class="link-title">
-                        <h3>Help</h3>
+                        <h3>Coding Tricks</h3>
                     </div>
 
                     <a href="#conModal3" class="portfolio-link" data-toggle="modal">
@@ -235,7 +247,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/book.jpeg" class="img-responsive" alt="">
+                        <img src="img/code.jpeg" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -269,6 +281,19 @@
 
                             <p>To learn more about the EUSA, click <a href="https://www.eusa.ed.ac.uk/">here! </a>
                             <p> </p>
+                            <p>
+<a href="javascript:toggleElement('a1')">Is there more info about the EUSA's mission statement I can find?</a>
+</p>
+<div id="a1" style="display:none">
+You're in luck, here's <a href="https://www.eusa.ed.ac.uk/about/strategic/">exactly </a>what you're looking for!
+</div>
+<p>
+<a href="javascript:toggleElement('a2')">Who exactly runs the EUSA?</a>
+</p>
+<div id="a2" style="display:none">
+Here's who your student reps are what they can do for you at this  <a href="https://www.eusa.ed.ac.uk/representation/studentrepresentation/">link </a>
+</div>
+
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -307,6 +332,29 @@
                             <p>
                                 Searching and joining a society is a streamlined process! All societies have a wonderful crew of officials that are easy to contact and everyone manages their events through social media. Use <a href="https://www.eusa.ed.ac.uk/activities/societies/findasociety/"> this </a> to find your societies to join! 
                             </p>
+<p>
+<a href="javascript:toggleElement('a3')">Is there a maximum limit on the societies you can join?</a>
+</p>
+<div id="a3" style="display:none">
+There is no limit to how many you can join, however don't spread yourself to thin! You want
+to enjoy the most you can in your respective societies.
+</div>
+<p>
+<a href="javascript:toggleElement('a4')">Is there a minimum time commitment you need to put in for a society?</a>
+</p>
+<div id="a4" style="display:none">
+There is no minimum time commitment, enjoy a society for as long as you want and if it's not working for you,
+explore your options! Please note that if a society does charge for admission, do not count on receiving the money
+back after leaving.
+</div>
+<p>
+<a href="javascript:toggleElement('a5')">Is there a society fair that showcases all the societies available?</a>
+</p>
+<div id="a5" style="display:none">
+Freshers week has the exact event you are looking for. For more information, see the events tab on this website.
+</div>
+
+
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -342,6 +390,17 @@
 
                                 From September 10th to the 17th, enjoy a multitude of activities such as a castle tour of Edinburgh or a visit to the zoo or go on a pub crawl! All these activities require money at the door, but if you buy a <a href="https://www.eusa.ed.ac.uk/shop/product/10032530/">Fresher's wristband </a> you'll enjoy discounted or even free events. This the best way to enjoy everything you can this fresher's week!
                             </p>
+<p>
+<a href="javascript:toggleElement('a6')">Can postgraduates attend?</a>
+</p>
+<div id="a6" style="display:none">
+Yes! You are also allowed to purchase a freshers wristband as well.</div>
+<p>
+<a href="javascript:toggleElement('a7')">Is alcohol necessary to enjoy fresher's week?</a>
+</p>
+<div id="a7" style="display:none">
+Of course not, there are events for both drinkers and non drinkers alike.
+</div>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -410,7 +469,7 @@
                         <div class="modal-body">
                             <h2>Help</h2>
                             <hr class="star-primary">
-                            <img src="img/book.jpeg" class="img-responsive img-centered" alt="">
+                            <img src="img/itopt.jpg" class="img-responsive img-centered" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -432,10 +491,79 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Process</h2>
+                            <h2>Personal Tutor & The ITO</h2>
                             <hr class="star-primary">
-                            <img src="img/paperwork.jpg" class="img-responsive img-centered" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                            <img src="img/itopt.jpg" class="img-responsive img-centered" alt="">
+                            <h1 align="center">Your Personal Tutor is here to Help</h1>
+                            <p>
+                                Think of your personal tutor (PT) as your personal counselor at the University of Edinburgh. Every student is assigned one, and these PTs handles all academic logistics such as matriculation, signing up for classes, and any academic support you may need. They will also offer personal if you have any difficulties dealing with school as well as career support. 
+                            </p>
+
+                            <h2 align="center"> Personal Tutors are your first line of Contact</h2>
+                            <ul>
+                                <li>A source for academic, career, and personal support</li>
+                                <li> Help you with any trouble you may have, either by directly helping or pointing you to the right resource to get help </li>
+                                <li> Your first contact to consult if you have any academic logistics dealing with matriculation</li>
+                                <li> Can only help you when you speak up and speak up soon </li>
+                            </ul>
+
+                            <h2 align="center"> The Informatics Teaching Organisation </h2>
+                            <p>
+                                The Informatics Teaching Organisation (ITO) is the institution that handles any issues you may have that your PT cannot solve at the moment. Any general informatics matriculation and logistics information can be resolved here via an appointment or walk in visit to the building.
+                            </p>
+
+                            <h2 align="center"> Contact the ITO if all else fails! </h2>
+                            <table class="table">
+    <tbody>
+        <tr>
+            <td>Internal enquiries</td>
+            <td><a class="external-link" href="https://weblogin.inf.ed.ac.uk/cosign-bin/cosign.cgi?factors=INF.ED.AC.UK&amp;cosign-www.inf.ed.ac.uk&amp;https://www.inf.ed.ac.uk/cgi-bin/iss/contact.cgi">Contact form</a></td>
+            <td>If you have an Informatics DICE account</td>
+        </tr>
+        <tr>
+            <td>External enquiries</td>
+            <td><a class="external-link" href="http://www.inf.ed.ac.uk/cgi-bin/iss/external-contact.cgi">Contact form</a></td>
+            <td>If you don't have a DICE account</td>
+        </tr>
+        <tr>
+            <td>Telephone</td>
+            <td>+44&nbsp;131&nbsp;651 7607</td>
+            <td>517607 within the University</td>
+        </tr>
+        <tr>
+            <td>Fax</td>
+            <td>+44&nbsp;131&nbsp;650&nbsp;2957</td>
+            <td>502957 within the University</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td colspan="2">ITO, Room FH-1.B15, Forrest Hill, 5 Forrest Hill, Edinburgh, EH1 2QL</td>
+        </tr>
+        <tr>
+            <td>Opening hours</td>
+            <td colspan="2">Monday–Friday 9.30am to 4.30pm, closing 12.30–1.30pm for lunch.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h1 align="center">FAQ</h1>
+<p>
+<a href="javascript:toggleElement('a8')">How do new students register for classes?</a>
+</p>
+<div id="a8" style="display:none">
+The week prior to fresher's week, your Personal Tutor will email you a time to schedule a meet up to discuss your classes.</div>
+<p>
+<a href="javascript:toggleElement('a9')">My PT still hasn't emailed me! What can I do?</a>
+</p>
+<div id="a9" style="display:none">
+If your PT is not helping you, reach out to the ITO as soon as possible. They will be able to address any matriculation procedures</div>
+<p>
+<a href="javascript:toggleElement('a10')">Is there more information about PTs I should be aware of?</a>
+</p>
+<div id="a10" style="display:none">
+<a href="http://web.inf.ed.ac.uk/infweb/student-services/ito/admin/personal-tutoring-statement">Here </a>is all you need to know about PTs</div>
+
+
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -455,9 +583,9 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Locations</h2>
+                            <h2>Popular Informatics Areas</h2>
                             <hr class="star-primary">
-                            <img src="img/pen.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/aerial.jpg" class="img-responsive img-centered" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -478,9 +606,9 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Help</h2>
+                            <h2>Coding Tricks</h2>
                             <hr class="star-primary">
-                            <img src="img/.jpeg" class="img-responsive img-centered" alt="">
+                            <img src="img/code.jpeg" class="img-responsive img-centered" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
